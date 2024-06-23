@@ -6,7 +6,7 @@ cmake \
 -DCMAKE_CXX_COMPILER=mpicxx \
 -DCMAKE_Fortran_COMPILER=mpifort \
 -DCMAKE_Fortran_FLAGS="-DDEBUG -O" \
--DFLEXI_FV:BOOL=ON \
+-DFLEXI_FV=SWITCH \
 -DFLEXI_PARABOLIC:BOOL=OFF \
 \
 ..
@@ -14,4 +14,5 @@ cmake \
 exit 0
 
 -DCMAKE_Fortran_FLAGS="-DDEBUG -g -ffpe-trap=invalid,zero,overflow,underflow" \
+-DCMAKE_Fortran_FLAGS="-DDEBUG -O" \
 
